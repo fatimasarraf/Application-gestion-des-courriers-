@@ -1,0 +1,74 @@
+/* CourriersNonLus.css */
+.courrier-container {
+    padding: 20px;
+  }
+  
+  .courrier-list-container {
+    margin-top: 20px;
+  }
+  
+  .courrier-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .courrier-item {
+    position: relative; /* Required for absolute positioning of the red dot */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    
+    cursor: pointer;
+    
+    background-color: rgba(172, 171, 171, 0.4); /* Light grey background for unread courriers */
+  }
+  
+  .courrier-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .courrier-icon {
+    margin-right: 10px;
+  }
+  
+  .courrier-subject {
+    flex: 1;
+  }
+  
+  .courrier-time {
+    color: #888;
+  }
+  
+  .unread-dot {
+    position: absolute;
+    top: 5px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+
+  .pagination-button.active {
+    background-color: rgb(8, 174, 106, 0.8);
+    font-weight: bold;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button {
+    background-color: rgb(8, 174, 106, 0.8);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 2px; /* Add some margin to space out buttons */
+  }
+  

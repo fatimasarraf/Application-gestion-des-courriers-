@@ -1,0 +1,123 @@
+.courrier-archiver {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espace entre les éléments */
+    margin-bottom: 10px; /* Espace entre les champs */
+  }
+  
+  .courrier-archiver > div {
+    flex: 1 1 45%; /* Ajuste la largeur des champs à 45% de l'espace disponible */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px; 
+    font-weight: bold;/* Espace entre le label et l'input */
+  }
+  
+  .courrier-archiver input {
+    padding: 5px; /* Ajouter de l'espace à l'intérieur de l'input */
+    font-size: 15px; 
+    height: 25px;
+    border: none;/* Taille de la police pour l'input */
+  }
+  
+  .button-archive {
+    margin-right: 10px;
+    padding: 10px 20px; /* Espace intérieur pour les boutons */
+    font-size: 16px; /* Taille de la police pour les boutons */
+    margin-top: 10px;
+    width: 120px;
+    background-color: rgb(8, 174, 106, 1);
+    text-align: center;
+    border: none; 
+    color:white;
+    font-weight: bold;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-left: 370px;/* Espace entre les boutons */
+  }
+  
+  .button-disabled {
+    background-color: rgb(196, 194, 194);
+    margin-right: 10px;
+    padding: 10px 20px; /* Espace intérieur pour les boutons */
+    font-size: 16px; /* Taille de la police pour les boutons */
+    margin-top: 10px;
+    width: 120px;
+    margin-left: 370px;
+  }
+
+  .invalid-field input {
+    border-color: red;
+    background-color: rgb(251, 176, 176);
+  }
+ /*  .invalid-field {
+    border-color: red;
+    background-color: rgb(251, 176, 176);
+  } */
+
+  .courrier-archiver .invalid-field{
+    background-color: rgb(251, 176, 176);
+  }
+  .error-message-archiver{
+    color: red;
+    margin-top: 15px;
+    font-size: 16px;
+    margin-left: 320px;
+    
+  }
+
+  
+
+  
+  .courrier-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espace entre les éléments */
+  }
+  
+  .courrier-form > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .courrier-archiver label{
+    color: rgb(8, 174, 106, 1);
+  }
+
+  .alert-message-archiver {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 10px 15px; /* Padding around the message */
+    border: 1px solid #f5c6cb; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Space above the message */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center text */
+  }
+
+  .alert-error {
+    color: #f44336; /* Couleur rouge pour les messages d'erreur */
+    background-color: #fdecea; /* Couleur de fond rouge clair */
+    border: 1px solid #f44336; /* Bordure rouge */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+
+  .alert-success {
+    color: #4caf50; /* Couleur verte pour les messages de succès */
+    background-color: #e8f5e9; /* Couleur de fond verte claire */
+    border: 1px solid #4caf50; /* Bordure verte */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 400px;
+    margin-left: 180px;
+  }
+
+  

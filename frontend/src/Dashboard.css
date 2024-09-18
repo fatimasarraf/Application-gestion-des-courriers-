@@ -1,0 +1,45 @@
+.dashboard-container {
+    max-height: 90vh; /* Adjust the height as needed */
+    height: 80vh; /* Adjust this value based on your layout */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.scrollable-container {
+    overflow-y: auto;
+    max-height: 600px; /* Adjust height as needed */
+}
+
+.chart-day{
+    width: 170px;
+    height: 20px;
+    
+    margin-bottom: 40px;
+
+    padding: 8px; /* Add padding */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  margin-left: 10px; /* Space between label and input */
+  font-size: 15px; /* Font size */
+  /* Set a width */
+  transition: border-color 0.3s; 
+   
+}
+
+.chart-day_courbe{
+    justify-content: center;
+    margin-left: 140px;
+}
+.label-day{
+    margin-top: 5px;
+   
+
+}
+.chart-container_day{
+  
+  justify-content: center; /* Center the chart */
+  margin: 20px 0; 
+  margin-top: 40px;
+}

@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 400px; /* Prend toute la largeur de la vue */
+  height: 400px; /* Prend toute la hauteur de la vue */
+}
+
+nav {
+  width: 250px; /* Largeur fixe pour la navigation */
+  background: rgba(172, 171, 171, 0.8);   /* Couleur de fond de la barre de navigation */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ajoute de l'espace entre les éléments du haut et du bas */
+}
+
+.main-nav, .bottom-nav {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Prend toute la largeur de la nav */
+}
+
+.main-nav {
+  margin-top: -75px; /* Ajuster la marge selon vos besoins */
+}
+
+.bottom-nav {
+  margin-bottom: 20px; /* Ajouter de l'espace en bas si nécessaire */
+}
+
+.main-nav li, .bottom-nav li {
+  margin-bottom: 3px;
+}
+
+.main-nav li a, .bottom-nav li a {
+  text-decoration: none;
+  color: #ededf9; /* Couleur du texte des liens */
+  display: block;
+  padding: 10px 20px; /* Ajouter un padding horizontal */
+  font-weight: bold; /* Rendre le texte en gras */
+  transition: background-color 0.3s, color 0.3s; /* Transitions douces pour hover */
+}
+
+.main-nav li.active a, .bottom-nav li.active a {
+  background-color: rgb(8, 174, 106, 0.8); 
+  box-shadow: 0 4px 8px rgba(59, 59, 59, 0.5);/* Couleur de fond des liens actifs */
+}
+
+main {
+  flex: 1; /* Prend tout l'espace restant */
+  background: #f4f4f4; /* Couleur de fond du contenu principal */
+  width: calc(100vw - 250px);
+   /* Largeur calculée en soustrayant la largeur de nav */
+}
+
+.logo {
+  width: 40px;
+  align-self: center;
+  margin-top: -50px; /* Centre l'image horizontalement */
+}
+
+.user-info {
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 5px;
+  margin-top: -8px;
+  display: flex;
+  background-color: rgb(8, 174, 106, 0.8);
+  box-shadow: 0 4px 8px rgba(59, 59, 59, 0.5);
+}
+
+.user-info-container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: flex-end; /* Alignement à droite */
+  margin-top: 10px;
+  
+}
+
+/* .user-info .user-text {
+  margin-right: -15px; 
+ 
+}
+
+.user-info .username {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: bold;
+  margin-right: 50px;
+  margin-left: 5px;
+  
+  
+  
+}
+
+.username {
+  font-size: 20px; 
+  font-weight: bold; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  margin-right: 20px;
+  
+  
+}
+
+.icon_username {
+  color: #e6e8ea;
+  font-size: 35px; 
+  margin-right: 50px;
+  margin-left: 6px; 
+} */
+
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-image {
+  flex: 0 0 auto;
+  
+  
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.user-text {
+  margin-right: 10px;
+  color:white;
+  font-size: 20px; 
+  font-weight: bold; 
+}
+
+.icon_username {
+  margin-left: 10px;
+}
+
+
+.dashboard-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  color: #98989b; /* Vous pouvez personnaliser la couleur comme vous le souhaitez */
+}
+
+
+
+/* Styles pour le dropdown */
+.dropdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espace entre l'icône et le texte */
+  padding: 10px 20px;
+  color: #5c5c5d;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown:hover, .dropdown.active {
+  background-color: #a2c2f1; /* Couleur de fond en survol ou actif */
+}
+
+.submenu {
+  list-style-type: none;
+  padding-left: 20px;
+  display: none; /* Par défaut, caché */
+}
+
+.submenu.show {
+  display: block; /* Afficher lorsqu'actif */
+}
+
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #315193;
+  padding: 5px 20px;
+  display: block;
+}
+
+.submenu li a:hover, .submenu li.active a {
+  font-weight: bold;
+  background-color: #e6e8ea;
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.statistics-container {
+  display: flex;
+  gap: 10px; /* Espacement entre les éléments */
+}
+
+.statistics-container p {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin: 0;
+  width: 190px;
+  height: 20px;
+  padding-left: 20px;
+}
+
+.stat-envoyes {
+  background-color: #b5df41; /* Vert */
+}
+.stat-departs {
+  background-color: #7dbff4; /* Vert */
+}
+
+.stat-archiver {
+  background-color: #f4b24e; /* Bleu */
+}
+
+.stat-transferer {
+  background-color: #eddd61; /* Orange */
+}
+
+.stat-recus {
+  background-color: #f4b24e; /* Rouge */
+}
+
+.stat-non-lus {
+  background-color: #7dbff4; /* Violet */
+}
+
+.stat-lus {
+  background-color: #b5df41; /* Gris */
+}
+
+.charts-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center; /* Center the chart */
+  margin: 20px 0; /* Optional margin for spacing */
+}
+
+.chart-title {
+  
+  color: #5c5c5d; /* Center the title */
+}
+
+
+.month-input {
+  padding: 8px; /* Add padding */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  margin-left: 10px; /* Space between label and input */
+  font-size: 15px; /* Font size */
+  width: 180px; /* Set a width */
+  transition: border-color 0.3s; 
+  margin-top: 20px;/* Smooth border color transition */
+}
+
+.month-input:focus {
+  border-color: #8884d8; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.imgucd{
+  width: 140px;
+  height: 71px;
+  margin-right: 535px;
+ 
+
+  
+}

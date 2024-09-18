@@ -1,0 +1,99 @@
+/* AllUsers.css */
+.all-users-container {
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    max-height: 80vh; /* Adjust height as needed */
+     /* Prevents overflow from the container */
+  }
+  
+ 
+  
+  .users-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse;
+    border: 0.5px solid #dedbdb;
+    background-color: #fbf8f8; /* Collapses borders */
+  }
+  
+  .users-table th, .users-table td {
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd;
+    border: 0.5px solid #dedbdb; /* Add a border to the bottom of table rows */
+  }
+  .users-table th{
+  color: rgb(122, 121, 121);
+  font-size: 17px;
+
+  }
+  .users-table td{
+    color: rgb(67, 66, 66);
+    font-size: 15px;
+  }
+  
+  .add-user-button {
+    margin-bottom: 20px; /* Add some space below the button */
+    padding: 10px 15px; /* Button padding */
+    background-color: rgb(8, 174, 106, 0.8); /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold; /* Pointer cursor on hover */
+  }
+  
+  .add-user-button:hover {
+    background-color: rgb(8, 174, 106, 0.5); /* Darken the button on hover */
+  }
+  
+  .error-message {
+    color: red; /* Error message color */
+    margin-bottom: 20px; /* Space below error message */
+  }
+
+  .edit-button,
+  .delete-button {
+    margin-right: 15px; 
+    width: 90px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    height: 25px;
+    /* Ajoute un espace à droite des boutons */
+  }
+  
+  .delete-button {
+    margin-right: 0;
+    background-color: #f4b24e; /* Supprime l'espace à droite du dernier bouton */
+  }
+
+  .edit-button {
+    background-color: #b5df41
+  }
+
+
+  .search-input-users {
+
+    margin-bottom: 10px;
+    border: none;
+    width: 400px;
+    height: 40px;
+    padding-right: -60px;
+    padding-left: 10px;
+    margin-right: 90px;
+   
+  } 
+  .search-input-users-searche{
+    margin-left: 240px;
+    margin-bottom: 10px;
+  }
+
+  
+  .search-input-users-searche::placeholder {
+    padding-left: 10px;/* Center the placeholder text */
+    color: rgb(132, 131, 131); /* Optional: Change the placeholder text color */
+  }
+   
+  

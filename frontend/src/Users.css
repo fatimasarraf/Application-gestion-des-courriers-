@@ -1,0 +1,131 @@
+/* AddUser.css */
+.user-form-container-utilisateur {
+  padding: 20px;
+    max-width: 100%;
+    overflow-x: hidden; /* Enables horizontal scrolling if needed */
+  margin-left: 180px;/* Enables vertical scrolling */
+    
+    overflow-y: auto;
+    height: 80vh; 
+    white-space: 40px;/* Adjust height as needed */
+     
+}
+
+.form-scroll-utilisateur {
+  width: 670px;
+  margin-top: 40px;
+ 
+
+ 
+}
+.form-group-utilisateur label{
+  display: block;
+    color: rgb(8, 174, 106, 1);
+   
+}
+.form-group-utilisateur input {
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  
+  
+}
+.form-group-utilisateur select{
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+ 
+}
+
+ .form-utilisateur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 600px;
+} 
+
+.form-group-utilisateur {
+  flex: 1 1 45%; /* Ajuste la largeur des éléments de formulaire */
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+/* label {
+  margin-bottom: 5px;
+  font-weight: bold;
+} */
+
+/* input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+} */
+
+/* button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* button:hover {
+  background-color: #0056b3;
+}
+ */
+
+
+ .dashboard-title-user {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  color: #98989b;
+  margin-right: 120px; /* Vous pouvez personnaliser la couleur comme vous le souhaitez */
+}
+
+.utilisateur-Boutton{
+  margin-bottom: 20px; /* Add some space below the button */
+    padding: 10px 15px; /* Button padding */
+    background-color: rgb(8, 174, 106, 0.8); /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold; 
+    margin-left: 230px;
+    margin-top: 20px;
+
+}
+
+.utilisateur-Boutton:hover {
+  background-color: rgb(8, 174, 106, 0.5); /* Darken the button on hover */
+}
+
+.form-scroll-utilisateur-service{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-title-service{
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  color: #98989b;
+  margin-right: 120px;
+}
+
+.form-group-utilisateur .invalid-field{
+  background-color: rgb(251, 176, 176);
+}
+
+.error-message-users{
+  color: red;
+  font-size: 16px;
+  margin-left: 200px;
+  
+}

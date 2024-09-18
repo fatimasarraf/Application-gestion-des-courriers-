@@ -1,0 +1,66 @@
+from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
+from .views import LoginView ,NextIncrementedNumberView, EnvoyerCourrierView, UserListView, CourrierDepartListView, CourrierDepartDetailView, CourriersRecusView, CourrierRecusDetailView, ArchiveCourrierView, CourriersArchiverDetails, CourriersArchivesList, DepartmentServicesAndUsersByUser, TransferReasonListAPIView,CreateCourrierDepartAPIView, CreateTransferAPIView, CourriersTransferesList, CourriersTransfereDetails, CourrierUpdateAPIView, UserCreateView, ServiceListView, UserLists, ServiceViewSet,AllService, ServiceDetail, UsersWithRoleInService, CurrentUserDataView, UserStatisticsView, UpdateCourrierDepartView, UpdateTransferView, SuiverCourrierListView,UserDetailDeleteUpdate, DepartmentsByTypeView, EstablishmentTypesView, SuportsListAPIView, CourrierIncrementedNumberView, EnvoyerView, CourrierListView, CourrierDetailView, AllDepartement, DepartementDetail, DepartementTypesView, DepartementViewSet, RolesListView, UserTransfersView, CourriersTransferesParUtilisateurView, PoleListView, DivisionListView, EtablissementListAPIView, CourriersRecusParEtablissementView, CourriersArrivesParEtablissementView, DivisionListAPIView, SearchCourriers, SearchrecustransfereCourriers
+
+
+urlpatterns = [
+     path('login/', LoginView.as_view(), name='login'),
+      path('next_incremented_number/', NextIncrementedNumberView.as_view(), name='next_incremented_number'),
+      path('Courrier_incremented_number/', CourrierIncrementedNumberView.as_view(), name='next_courrier_incremented_number'),
+    path('envoyer/', EnvoyerCourrierView.as_view(), name='envoyer_courrier'),
+    path('envoyer_courrier/', EnvoyerView.as_view(), name='envoyer'),
+    path('users/', UserListView.as_view(), name='user_list'),
+    path('courriers-depart/', CourrierDepartListView.as_view(), name='courriers-depart-list'),
+    path('courriers/', CourrierListView.as_view(), name='courriers-list'),
+    path('courriers-depart/<int:pk>/', CourrierDepartDetailView.as_view(), name='courrier-depart-detail'),
+    path('courriers-detail/<int:pk>/', CourrierDetailView.as_view(), name='courrier-detail'),
+     path('courriers_recus/<int:user_id>/', CourriersRecusView.as_view(), name='courriers_recus'),
+     # path('update_courrier/<int:id>/', UpdateCourrierStatus.as_view(), name='update_courrier_status'),
+     path('courriers-Details-recus/<int:pk>/', CourrierRecusDetailView.as_view(), name='courrier-Recus-detail'),
+     path('archiver/<int:id>/', ArchiveCourrierView.as_view(), name='archive_courrier'),
+     path('courriers_archives_details/<int:pk>/', CourriersArchiverDetails.as_view(), name='courriers_archives_details'),
+     path('courriers_archives/<int:user_id>/', CourriersArchivesList.as_view(), name='courriers_archives_list'),
+     path('department_services_and_users_by_user/<int:user_id>/', DepartmentServicesAndUsersByUser.as_view(), name='department_services_and_users_by_user'),
+     path('reasons/', TransferReasonListAPIView.as_view(), name='get_transfer_reasons'),
+     path('etablissement/', EtablissementListAPIView.as_view(), name='get_transfer_etablissement'),
+     path('division/', DivisionListAPIView.as_view(), name='get_transfer_division'),
+      path('courriers-Depart/<int:id>/', CreateCourrierDepartAPIView.as_view(), name='create_courrier_depart'),
+     path('transfers/<int:id>/', CreateTransferAPIView.as_view(), name='create_transfer'),
+     path('courriers_transferes/<int:user_id>/', CourriersTransferesList.as_view(), name='courriers_transferes_list'),
+     path('courriers_transferes_details/<int:pk>/', CourriersTransfereDetails.as_view(), name='courriers_transferes_details'), 
+      path('update_courrier_and_save_click_time/<int:id>/', CourrierUpdateAPIView.as_view(), name='update_courrier_and_save_click_time'),
+      path('add_users/', UserCreateView.as_view(), name='add_user'),
+    path('services/', ServiceListView.as_view(), name='service-list'),
+    path('poles/', PoleListView.as_view(), name='pole-list'),
+    path('divisions/', DivisionListView.as_view(), name='pole-list'),
+   
+    path('users_list/', UserLists.as_view(), name='user_list'),
+    path('roles/', RolesListView.as_view(), name='roles_list'),
+    path('Create_Service/', ServiceViewSet.as_view(), name='create_service'),
+    path('Create_Departement/', DepartementViewSet.as_view(), name='create_Departement'),
+    path('All_Service/', AllService.as_view(), name='All_service'),
+    path('All_Departement/', AllDepartement.as_view(), name='All_Departement'),
+    path('Service/<int:service_id>/', ServiceDetail.as_view(), name='get_update_service'),
+    path('Departement/<int:departement_id>/', DepartementDetail.as_view(), name='get_update_departement'),
+    path('DepartementTypes/', DepartementTypesView.as_view(), name='departement-types'),
+    path('UsersWithRoleInService/<str:service_name>/', UsersWithRoleInService.as_view(), name='get_users_with_role_in_service'),
+    path('current_user/<int:user_id>/', CurrentUserDataView.as_view(), name='current_user'),
+    path('user_statistics/<int:user_id>/', UserStatisticsView.as_view(), name='user_statistics'),
+    path('update_courrier_depart/<int:id>/',UpdateCourrierDepartView.as_view(), name='update_courrier_depart'),
+    path('update_transfer/<int:id>/',UpdateTransferView.as_view(), name='update_transfer'),
+    path('suiver-courrier/<int:user_id>/', SuiverCourrierListView.as_view(), name='suiver-courrier'),
+    path('User/<int:user_id>/', UserDetailDeleteUpdate.as_view(), name='user-detail'),
+    path('departments/<str:etablissement_type>/', DepartmentsByTypeView.as_view(), name='get_departments_by_type'),
+    path('establishment_types/', EstablishmentTypesView.as_view(), name='get_establishment_types'),
+    path('suport/', SuportsListAPIView.as_view(), name='get_suport'),
+     path('user-transfers/<int:user_id>/', UserTransfersView.as_view(), name='user-transfers'),
+    path('courriers_transferes_par_utilisateur/<int:user_id>/', CourriersTransferesParUtilisateurView.as_view(), name='courriers_transferes_par_utilisateur'),
+    path('courriers_recus_par_etablissement/<int:user_id>/<str:etablissement_nom>/', CourriersRecusParEtablissementView.as_view(), name='courriers_etablissement_par_etablissement'),
+     path('courriers_arrives_par_etablissement/<int:user_id>/<str:etablissement_arrives_nom>/', CourriersArrivesParEtablissementView.as_view(), name='courriers_arrives_par_etablissement'),
+     path('<str:courrier_type>/search/', SearchCourriers.as_view(), name='search_courrier'),
+    
+     path('<str:courrier_type>/search_recus_transfer/', SearchrecustransfereCourriers.as_view(), name='search_recus_transfere_courrier'),
+] 
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,195 @@
+.form-container_depart {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  height: 80vh; /* Adjust this value based on your layout */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 40px;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 25px;
+  
+  
+}
+
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 15px;
+  
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(8, 174, 106, 1);
+}
+
+.form-row label{
+  color: rgb(8, 174, 106, 1);
+}
+
+.form-group input[type="text"],
+.form-group input[type="datetime-local"],
+.form-group input[type="number"],
+.form-group input[type="file"] 
+  .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+
+.support {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* .checkbox-container {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-height: 300px; 
+  overflow-x: auto; 
+  height: 20vh;
+  
+} */
+
+/* .checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+}
+
+.checkbox-label {
+  margin-left: 5px; 
+} */
+
+
+
+
+
+
+
+/* .checkbox-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(122, 121, 121);
+  font-size: 16px;
+
+} */
+
+
+
+
+/* .checkbox-item {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-item input {
+  margin-right: 10px;
+} */
+
+/* .checkbox-container input[type='checkbox'] {
+  margin-right: 10px;
+} */
+
+.form-group input[readonly] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.invalid-field input {
+  border-color: red;
+}
+
+.file-preview {
+  margin-top: 10px;
+}
+
+.file-preview img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(8, 174, 106, 0.8);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-actions button:hover {
+  background-color: rgba(49, 243, 162, 0.8);
+}
+
+.alert {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alert.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.invalid-field input {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+

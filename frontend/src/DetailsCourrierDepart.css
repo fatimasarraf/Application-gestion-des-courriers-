@@ -1,0 +1,96 @@
+.dashboard-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    color: #98989b;
+     /* Vous pouvez personnaliser la couleur comme vous le souhaitez */
+  }
+
+  .courrier-details {
+    padding: 20px;
+    height: 80vh; /* Adjust this value based on your layout */
+    overflow-y: auto; /* Add vertical scrolling */
+    box-sizing: border-box; /* Ensure padding is included in the total height */
+  }
+  
+  
+  
+  .line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex: 1;
+    min-width: 200px; 
+    gap: 10px;
+    border: none;/* Ensure minimum width for input groups */
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: rgb(8, 174, 106, 1);
+  }
+  
+  .input-group input {
+    padding: 8px;
+    font-size: 15px;
+    color: #555557;
+    border: none;
+    height:25px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .button {
+    width: 25%;
+  padding: 12px;
+  background-color: #08AE6A; /* Couleur de fond pour le bouton */
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  
+  }
+
+
+  
+  .back-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #08AE6A; /* Color of the icon */
+    font-size: 24px; /* Icon size */
+    cursor: pointer; /* Pointer cursor */
+    
+    
+  }
+  
+  .back-button:hover {
+    color: #06a959;
+    
+    color: #61d237;/* Darker shade on hover */
+  }
+  
+  
+
+  .pdf-viewer {
+    margin-top: 20px;
+    height: 500px; /* Ajustez la hauteur selon vos besoins */
+    border: 1px solid #ccc;
+  }  
